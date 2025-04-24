@@ -1,40 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Meditação</title>
-    </head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditacao</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <body>
+    <header>
+        <a class="voltar" href="index.html">&#x276E;</a>
+        <h1>Meditacao</h1>
+        <a class="icone-home" href="index.html">
+            <img src="img/casa.png" alt="Inicio">
+        </a>
+    </header>
 
-        <header>
-            <button type="button" onclick="window.location.href='index.html'">Home</button>
-            <h1>MEDITAÇÃO</h1>
-        </header>
+    <main class="meditacao">
+        <p class="saudacao"><em>Bom dia, Lucas!</em></p>
+        <p class="incentivo"><strong>Continue a sua jornada!</strong></p>
 
-        <main>
-            <button type="button" onclick="window.location.href='meditacao_rapida.html'">Meditação Rápida</button>
-            <button type="button" onclick="window.location.href='meditacao_grupo.html'">Meditação em Grupo</button>
-            <button type="button" onclick="window.location.href='meditacao_musica.html'">Meditação Música</button>
-        </main>
+        <section class="cards-meditacao">
+            <h2>Opções de Meditação</h2>
 
-        <footer>
-            <a href="alimentacao.html">
-                <img src="img/apple.png" width="100" height="100" alt="Alimentação">
-            </a>
-            <a href="exercicio.html">
-                <img src="img/anilha.png" width="100" height="100" alt="Exercícios">
-            </a>
-            <a href="meditacao.html">
-                <img src="img/lotus.png" width="100" height="100" alt="Meditação">
-            </a>
-            <a href="amigos.html">
-                <img src="img/friends.png" width="100" height="100" alt="Amigos">
-            </a>
-            <a href="mais.html">
-                <img src="img/more.png" width="100" height="100" alt="Outros">
-            </a>
-        </footer>
-        
-    </body>
+            <article class="bloco grande">
+                <h3>Trilha Ansiedade</h3>
+                <p><strong>Trilha Ansiedade</strong></p>
+                <img src="https://fakeimg.pl/60x60" alt="Cerebro">
+            </article>
+
+            <article class="bloco pequeno">
+                <h3>Sons</h3>
+                <p><strong>Sons</strong></p>
+                <img src="https://fakeimg.pl/60x60" alt="Sons">
+            </article>
+
+            <article class="bloco pequeno">
+                <h3>Sono</h3>
+                <p><strong>Sono</strong></p>
+                <img src="https://fakeimg.pl/60x60" alt="Sono">
+            </article>
+
+            <a href="explorar.html" class="bloco pequeno">
+                <h3>Explorar</h3>
+                <p><strong>Explorar</strong></p>
+                <img src="https://fakeimg.pl/60x60" alt="Buscar">
+            </a>            
+
+            <article class="bloco compartilhar">
+                <h3>Compartilhe</h3>
+                <p><strong>Compartilhe</strong></p>
+                <img src="https://fakeimg.pl/40x40" alt="Compartilhar">
+            </article>
+        </section>
+
+        <section class="grafico">
+            <h3>Minutos de Meditacao por Dia</h3>
+            <img src="https://fakeimg.pl/300x150/6b88f7/?text=Grafico" alt="Grafico de meditacao">
+        </section>
+    </main>
+
+    <footer>
+        <a href="alimentacao.html"><img src="img/apple.png" alt="Alimentacao"></a>
+        <a href="exercicio.html"><img src="img/anilha.png" alt="Exercicio"></a>
+        <a href="meditacao.html"><img src="img/lotus.png" alt="Meditacao"></a>
+        <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
+        <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
+    </footer>
+
+</body>
 </html>

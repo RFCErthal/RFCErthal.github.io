@@ -1,50 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Amigos</title>
-    </head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <body>
-        
-        <header>
-            <button type="button" onclick="window.location.href='index.html'">Home</button>
-            <h1>Ranking de Amigos</h1>
-        </header>
+    <header>
+        <a class="voltar" href="index.html">&#x276E;</a>
+        <h1>Ranking de Amigos</h1>
+        <a class="icone-home" href="index.html">
+            <img src="img/casa.png" alt="Inicio">
+        </a>
+    </header>
 
-        <main>
-            <ol>
-                <li>
-                    <p>Vittoria</p> <span>🔥 6 dias</span>
-                </li>
-                <li>
-                    <p>Maíra</p> <span>🔥 5 dias</span>
-                </li>
-                <li>
-                    <p>Rodrigo</p> <span>🔥 3 dias</span>
-                </li>
+    <main class="amigos">
+        <section class="bloco">
+            <h2>Ranking Atual</h2>
+            <ol class="ranking">
+                <li><p>Vittoria</p> <span>🔥 6 dias</span></li>
+                <li><p>Maira</p> <span>🔥 5 dias</span></li>
+                <li><p>Rodrigo</p> <span>🔥 3 dias</span></li>
             </ol>
+        </section>
 
-            <button type="button" onclick="window.location.href='adicionar_amigos.html'">Adicionar</button>
-        </main>
+        <a href="adicionar_amigos.html" class="botao-adicionar">Adicionar</a>
+    </main>
 
-        <footer>
-            <a href="alimentacao.html">
-                <img src="img/apple.png" width="100" height="100" alt="Alimentação">
-            </a>
-            <a href="exercicio.html">
-                <img src="img/anilha.png" width="100" height="100" alt="Exercícios">
-            </a>
-            <a href="meditacao.html">
-                <img src="img/lotus.png" width="100" height="100" alt="Meditação">
-            </a>
-            <a href="amigos.html">
-                <img src="img/friends.png" width="100" height="100" alt="Amigos">
-            </a>
-            <a href="mais.html">
-                <img src="img/more.png" width="100" height="100" alt="Outros">
-            </a>
-        </footer>
+    <footer>
+        <a href="alimentacao.html"><img src="img/apple.png" alt="Alimentacao"></a>
+        <a href="exercicio.html"><img src="img/anilha.png" alt="Exercicio"></a>
+        <a href="meditacao.html"><img src="img/lotus.png" alt="Meditacao"></a>
+        <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
+        <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
+    </footer>
 
-    </body>
+</body>
 </html>

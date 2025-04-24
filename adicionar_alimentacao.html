@@ -1,67 +1,66 @@
-<!DOCTYPE html>   
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Alimentação</title>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a class="voltar" href="alimentacao.html">&#x276E;</a>
+        <h1>Alimentação</h1>
+        <a class="icone-home" href="index.html">
+            <img src="img/casa.png" alt="Inicio">
+        </a>
+    </header>      
 
-    <body>
+    <main class="adicionar">
+        <h2>Adicionar</h2>
 
-        <header>
-            <button type="button" onclick="window.location.href='index.html'">Home</button>
-            <h1>Adicionar</h1>
-        </header>
+        <section class="busca">
+            <h3 class="titulo-busca">Buscar alimento</h3>
+            <input type="text" placeholder="Digite...">
+            <button class="icone-busca">
+                <img src="https://fakeimg.pl/24x24?text=🔍" alt="Buscar">
+            </button>
+        </section>
 
-        <main>
-            <p>Carnes</p> 
-            <p>Frango</p>
-            <a href="peixes.html">
-                <p>Peixes</p>
-            </a>
-            <p>Outras prateleiras</p>
+        <section class="bloco-lista">
+            <h3>Recomendados:</h3>
+            <ul>
+                <li>
+                    <a href="peixes.html" class="item-link">Peixes</a>
+                    <button class="add" onclick="location.href='peixes.html'">+</button>
+                </li>                                              
+                <li>Carnes <button class="add">+</button></li>
+                <li>Saladas <button class="add">+</button></li>
+                <li>Frangos <button class="add">+</button></li>
+                <li>Cereais <button class="add">+</button></li>
+                <li>Bebidas <button class="add">+</button></li>
+            </ul>
+        </section>
 
-            <p>Frutas</p>
-            <p>Legumes</p>
-            <p>Fibras</p>
-            <p>Saladas</p>
+        <section class="bloco-lista historico">
+            <h3>Histórico</h3>
+            <ul>
+                <li>Salada Caesar <span class="tempo">Há 2h</span></li>
+                <li>Salada de Frutas <span class="tempo">Há 5h</span></li>
+                <li>Bife Acebolado <span class="tempo">Há 1 Dia</span></li>
+                <li>Strogonoff <span class="tempo">Há 1 Dia</span></li>
+                <li>Pão na Chapa <span class="tempo">Há 1 Dia</span></li>
+                <li>Smoothie de Açaí <span class="tempo">Há 2 Dias</span></li>
+            </ul>
+        </section>
+    </main>
 
-            <p>Cereais</p>
-            <p>Sobremesa</p>
-            <p>Outros Alimentos</p>
-            <p>Bebidas</p>
-
-            <p>Personalizado</p>
-            <p>Água</p>
-            <p>copos hoje</p>
-
-            <em>Historico</em>
-            <p>Suco de uva às 3h</p>
-            <p>Strogonoff há 5h</p>
-            <p>2 maçãs há 8h</p>
-            <p>Salada Ceasar ontem</p>
-
-            <em>Historico Completo</em>
-
-        </main>
-
-        <footer>
-            <a href="alimentacao.html">
-                <img src="img/apple.png" width="100" height="100" alt="Alimentação">
-            </a>
-            <a href="exercicio.html">
-                <img src="img/anilha.png" width="100" height="100" alt="Exercícios">
-            </a>
-            <a href="meditacao.html">
-                <img src="img/lotus.png" width="100" height="100" alt="Meditação">
-            </a>
-            <a href="amigos.html">
-                <img src="img/friends.png" width="100" height="100" alt="Amigos">
-            </a>
-            <a href="mais.html">
-                <img src="img/more.png" width="100" height="100" alt="Outros">
-            </a>
-        </footer>
-        
-    </body>
-
+    <footer>
+        <a href="alimentacao.html"><img src="img/apple.png" alt="Alimentação"></a>
+        <a href="exercicio.html"><img src="img/anilha.png" alt="Exercício"></a>
+        <a href="meditacao.html"><img src="img/lotus.png" alt="Meditação"></a>
+        <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
+        <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
+    </footer>
+</body>
 </html>

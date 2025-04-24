@@ -1,44 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Exercícios</title>
-    </head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <body>
+    <header>
+        <a class="voltar" href="index.html">&#x276E;</a>
+        <h1>Exercicio</h1>
+        <a class="icone-home" href="index.html">
+            <img src="img/casa.png" alt="Inicio">
+        </a>
+    </header>
 
-        <header>
-            <button type="button" onclick="window.location.href='index.html'">Home</button>
-            <h2>EXERCÍCIOS</h2>
-        </header>
-        
-        <main>
+    <main class="exercicio">
+        <h2>Indicacoes Diarias</h2>
+
+        <section class="bloco-lista">
             <ul>
-                <li><a href="ar_livre.html">🚴‍♂️ Ar Livre</a></li>
-                <li>🏋️‍♂️ Malhação</li>
-                <li>☯️ Técnicas Chinesas</li>
-                <li>🧘 Alongamentos</li>
-                <li>🎵 Ritimada</li>
+                <li onclick="window.location.href='ar_livre.html'">
+                    <img src="https://fakeimg.pl/60x60" alt="Bike">
+                    <strong>Ar Livre</strong>
+                </li>                
+                <li><img src="https://fakeimg.pl/60x60" alt="Malhacao"> <strong>Malhacao</strong></li>
+                <li><img src="https://fakeimg.pl/60x60" alt="Alongamento"> <strong>Alongamentos</strong></li>
+                <li><img src="https://fakeimg.pl/60x60" alt="Ritmada"> <strong>Ritimada</strong></li>
             </ul>
-        </main>
+        </section>
 
-        <footer>
-            <a href="alimentacao.html">
-                <img src="img/apple.png" width="100" height="100" alt="Alimentação">
-            </a>
-            <a href="exercicio.html">
-                <img src="img/anilha.png" width="100" height="100" alt="Exercícios">
-            </a>
-            <a href="meditacao.html">
-                <img src="img/lotus.png" width="100" height="100" alt="Meditação">
-            </a>
-            <a href="amigos.html">
-                <img src="img/friends.png" width="100" height="100" alt="Amigos">
-            </a>
-            <a href="mais.html">
-                <img src="img/more.png" width="100" height="100" alt="Outros">
-            </a>
-        </footer>
-        
-    </body>
+        <section class="atalhos">
+            <article class="bloco pequeno">
+                <p><strong>Sua Estatisticas</strong></p>
+                <img src="https://fakeimg.pl/60x60" alt="Estatisticas">
+            </article>
+            <article class="bloco pequeno">
+                <p><strong>Buscar</strong></p>
+                <img src="https://fakeimg.pl/60x60" alt="Buscar">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <a href="alimentacao.html"><img src="img/apple.png" alt="Alimentacao"></a>
+        <a href="exercicio.html"><img src="img/anilha.png" alt="Exercicio"></a>
+        <a href="meditacao.html"><img src="img/lotus.png" alt="Meditacao"></a>
+        <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
+        <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
+    </footer>
+
+</body>
 </html>

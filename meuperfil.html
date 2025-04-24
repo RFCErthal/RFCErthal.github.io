@@ -1,58 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Meu Perfil</title>
-    </head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <body>
+<header>
+    <a class="voltar" href="index.html">&#x276E;</a>
+    <h1>Meu Perfil</h1>
+    <a class="icone-home" href="index.html">
+        <img src="img/casa.png" alt="Inicio">
+    </a>
+</header>
 
-        <header>
-            <button type="button" onclick="window.location.href='index.html'">Home</button>
-            <h1>MEU PERFIL</h1>
-        </header>
+<main class="perfil">
+    <section class="info-usuario">
+        <img src="img/user.png" alt="Foto de perfil">
+        <h2>Marcos Rosado</h2>
+    </section>
 
-        <main>
-            <section>
-                <img src="img/user.png" width="100" height="100" alt="Foto de perfil">
-                <h2>Marcos Rosado</h2>
-            </section>
+    <nav class="perfil-nav">
+        <a href="exercicio.html" class="botao-nav">Atividades</a>
+        <a href="stats.html" class="botao-nav">Stats</a>
+        <a href="sobre.html" class="botao-nav">Sobre</a>
+    </nav>
 
-            <nav>
-                <button type="button" onclick="window.location.href='exercicio.html'">Atividades</button>
-                <button type="button" onclick="window.location.href='stats.html'">Stats</button>
-                <button type="button" onclick="window.location.href='sobre.html'">Sobre</button>
-            </nav>
+    <section class="historico">
+        <h2>Histórico de Atividades</h2>
+    
+        <article>
+            <h3>19/02/25</h3>
+            <p>Corrida - 5,20km - 30:15min - 5:51 pace</p>
+        </article>
+    
+        <article>
+            <h3>15/02/25</h3>
+            <p>Yoga - 40min - 200kcal - 99 AVG BPM</p>
+        </article>
+    
+        <article>
+            <h3>14/02/25</h3>
+            <p>Natacao - 30min - 1500m - 1:45 m/100m</p>
+        </article>
+    </section>    
+</main>
 
-            <section>
-                <h3>19/02/25</h3>
-                <p>Corrida - 5,20km - 30:15min - 5:51 pace</p>
+<footer>
+    <a href="alimentacao.html"><img src="img/apple.png" alt="Alimentacao"></a>
+    <a href="exercicio.html"><img src="img/anilha.png" alt="Exercicio"></a>
+    <a href="meditacao.html"><img src="img/lotus.png" alt="Meditacao"></a>
+    <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
+    <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
+</footer>
 
-                <h3>15/02/25</h3>
-                <p>Yoga - 40min - 200kcal - 99 AVG BPM</p>
-
-                <h3>14/02/25</h3>
-                <p>Natação - 30min - 1500m - 1:45 m/100m</p>
-            </section>
-        </main>
-
-        <footer>
-            <a href="alimentacao.html">
-                <img src="img/apple.png" width="100" height="100" alt="Alimentação">
-            </a>
-            <a href="exercicio.html">
-                <img src="img/anilha.png" width="100" height="100" alt="Exercícios">
-            </a>
-            <a href="meditacao.html">
-                <img src="img/lotus.png" width="100" height="100" alt="Meditação">
-            </a>
-            <a href="amigos.html">
-                <img src="img/friends.png" width="100" height="100" alt="Amigos">
-            </a>
-            <a href="mais.html">
-                <img src="img/more.png" width="100" height="100" alt="Outros">
-            </a>
-        </footer>
-
-    </body>
+</body>
 </html>

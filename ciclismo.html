@@ -1,41 +1,76 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Exercícios</title>
-    </head>
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclismo - Metas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <body>
+    <header>
+        <a class="voltar" href="ar_livre.html">&#x276E;</a>
+        <h1>Exercicios</h1>
+        <a class="icone-home" href="index.html">
+            <img src="img/casa.png" alt="Inicio">
+        </a>
+    </header>
 
-        <header>
-            <button type="button" onclick="window.location.href='index.html'">Home</button>
-            <h2>Ciclismo</h2>
-        </header>
-        
-        <main>
-            <h3>Metas:</h3>
-            <p>→5KM a 10KM</p>
-            <p>→Conhecer novo ambiente</p>
-            <p>→Indicações Rotas</p>
-        </main>
+    <main class="ciclismo">
+        <h2>Ciclismo - Metas</h2>
 
-        <footer>
-            <a href="alimentacao.html">
-                <img src="img/apple.png" width="100" height="100" alt="Alimentação">
-            </a>
-            <a href="exercicio.html">
-                <img src="img/anilha.png" width="100" height="100" alt="Exercícios">
-            </a>
-            <a href="meditacao.html">
-                <img src="img/lotus.png" width="100" height="100" alt="Meditação">
-            </a>
-            <a href="amigos.html">
-                <img src="img/friends.png" width="100" height="100" alt="Amigos">
-            </a>
-            <a href="mais.html">
-                <img src="img/more.png" width="100" height="100" alt="Outros">
-            </a>
-        </footer>
+        <label for="filtro" class="subtitulo">Opcoes:</label>
+        <section class="busca">
+            <h3>Buscar Opções</h3>
+            <input type="text" id="filtro" placeholder="Outras opcoes...">
+            <button class="icone-busca">
+                <img src="https://fakeimg.pl/24x24?text=🔍" alt="Buscar">
+            </button>
+        </section>
 
-    </body>
+        <section class="atalhos">
+            <h3>Atalhos</h3>
+            <article class="bloco pequeno">
+                <h4>Suas Estatísticas</h4>
+                <p><strong>Sua Estatisticas</strong></p>
+                <img src="https://fakeimg.pl/60x60" alt="Estatisticas">
+            </article>
+            <article class="bloco pequeno">
+                <h4>Resumo</h4>
+                <p><strong>Resumo</strong></p>
+                <img src="https://fakeimg.pl/60x60" alt="Resumo">
+            </article>
+        </section>
+
+        <section class="bloco-lista">
+            <h3>Hoje</h3>
+            <ul>
+                <li><input type="checkbox"> Mais de 5km <span class="meta-dado">7.3 km</span></li>
+                <li><input type="checkbox"> Conhecer lugar novo <span class="meta-dado">SP</span></li>
+                <li><input type="checkbox"> Mais de 1 hora <span class="meta-dado">2h30m</span></li>
+                <li><input type="checkbox"> Atingir um novo objetivo <span class="meta-dado">Novos</span></li>
+            </ul>
+        </section>
+
+        <section class="bloco-resultado total">
+            <h3>Total da Sessão</h3>
+            <p><strong>Total:</strong><br>23km em 2h30m</p>
+        </section>
+
+        <section class="bloco-resultado destaque">
+            <h3>Parabéns</h3>
+            <p>Concluir, parabens!</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="alimentacao.html"><img src="img/apple.png" alt="Alimentacao"></a>
+        <a href="exercicio.html"><img src="img/anilha.png" alt="Exercicio"></a>
+        <a href="meditacao.html"><img src="img/lotus.png" alt="Meditacao"></a>
+        <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
+        <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
+    </footer>
+
+</body>
 </html>

@@ -1,57 +1,70 @@
-<!DOCTYPE html>   
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Alimentação</title>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALMAO</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a class="voltar" href="peixes.html">&#x276E;</a>
+        <h1>Alimentacao</h1>
+        <a class="icone-home" href="index.html">
+            <img src="img/casa.png" alt="Inicio">
+        </a>
+    </header>
 
-    <body>
+    <main class="salmao">
+        <h2>SALMAO</h2>
 
-        <header>
-            <button type="button" onclick="window.location.href='index.html'">Home</button>
-            <h1>Salmão</h1>
-        </header>
+        <label class="quantidade-label" for="quantidade">Quantidade:</label>
+        <section class="busca">
+            <input type="text" id="quantidade" placeholder="Digite...">
+            <button class="icone-busca">
+                <img src="https://fakeimg.pl/24x24?text=🔍" alt="Buscar">
+            </button>
+        </section>
 
-        <main>
-            <h2>Quantidade</h2>
-            <p>50g</p>
-            <p>50g</p>
-            <p>Personalizado</p>
-            <figure>
-                <img src="https://fakeimg.pl/50x50" width="50" height="50" alt="Simbolo de mais">
-            </figure>
-            <figure>
-                <img src="https://fakeimg.pl/50x50" width="50" height="50" alt="Simbolo de menos">
-            </figure>
-            <figure>
-                <img src="https://fakeimg.pl/50x50" width="50" height="50" alt="Simbolo de mais e menos">
-            </figure>
-    
-            <p> total: </p>
-            <h2>Acompanhamentos:</h2>
+        <section class="bloco-resultado">
+            <h3>Resultado Individual</h3>
+            <p>SALMAO total:</p>
+            <strong>300g</strong>
+        </section>
 
-            <p>Arroz</p>
-            <p>Batata</p>
-            <p>Outros</p> 
-        </main>
+        <section class="bloco-lista">
+            <h3>Acompanhamentos</h3>
+            <ul>
+                <li>Arroz <button class="add">+</button></li>
+                <li>Feijao <button class="add">+</button></li>
+                <li>Tomate <button class="add">+</button></li>
+                <li>Saladas <button class="add">+</button></li>
+                <li>Vegetais <button class="add">+</button></li>
+                <li>Outros <button class="add">+</button></li>
+            </ul>
+            <section class="busca">
+                <h4>Buscar Acompanhamentos</h4>
+                <input type="text" placeholder="Buscar...">
+                <button class="icone-busca">
+                    <img src="https://fakeimg.pl/24x24?text=🔍" alt="Buscar">
+                </button>
+            </section>
+        </section>
 
-        <footer>
-            <a href="alimentacao.html">
-                <img src="img/apple.png" width="100" height="100" alt="Alimentação">
-            </a>
-            <a href="exercicio.html">
-                <img src="img/anilha.png" width="100" height="100" alt="Exercícios">
-            </a>
-            <a href="meditacao.html">
-                <img src="img/lotus.png" width="100" height="100" alt="Meditação">
-            </a>
-            <a href="amigos.html">
-                <img src="img/friends.png" width="100" height="100" alt="Amigos">
-            </a>
-            <a href="mais.html">
-                <img src="img/more.png" width="100" height="100" alt="Outros">
-            </a>
-        </footer>
+        <section class="bloco-resultado total">
+            <h3>Resultado Total</h3>
+            <p>Total:</p>
+            <strong>SALMAO (300g) + Batata frita (200g) + Tomate (100g)</strong>
+        </section>
+    </main>
 
-    </body>
+    <footer>
+        <a href="alimentacao.html"><img src="img/apple.png" alt="Alimentacao"></a>
+        <a href="exercicio.html"><img src="img/anilha.png" alt="Exercicio"></a>
+        <a href="meditacao.html"><img src="img/lotus.png" alt="Meditacao"></a>
+        <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
+        <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
+    </footer>
+</body>
 </html>

@@ -1,0 +1,598 @@
+
+/* Acessibilidade e Boas Práticas */
+html {
+    font-size: 100%; /* Base para rem (16px padrão) */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--preto);
+    background-color: var(--branco);
+}
+
+a {
+    color: var(--azul-escuro);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    outline: 2px solid var(--destaque-laranja);
+    outline-offset: 4px;
+}
+
+
+:root {
+    --verde-claro: #BCF3C6;
+    --verde: #7CECAB;
+    --azul: #59B3EB;
+    --azul-escuro: #193BC4;
+    --cinza: #A1A3A8;
+    --preto: #000000;
+    --branco: #ffffff;
+    --destaque-laranja: #f75e25;
+}
+
+/* layout geral */
+html, body {
+  font-size: 1rem;
+  line-height: 1.5;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* main geral */
+main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.75rem;
+    padding-bottom: 6rem;
+}
+
+/* header geral */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+.voltar {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.icone-home img {
+    width: 1.5rem;
+    height: auto;
+}
+
+/* footer geral */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid var(--cinza);
+    z-index: 10;
+}
+
+footer img {
+    height: 2rem;
+}
+
+/* index.html, mais.html */
+.home, .mais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.home .bloco, .mais .bloco {
+    width: 90%;
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+/* alimentacao.html - cards principais */
+.atalhos {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.bloco.pequeno {
+    flex: 1;
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    min-width: 8rem;
+}
+
+.bloco {
+    text-decoration: none; /* remove sublinhado */
+    color: inherit; /* usa a cor do texto do elemento pai */
+    cursor: default; /* seta o cursor para parecer texto comum */
+}
+
+.bloco.pequeno p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.bloco.pequeno img {
+    width: 3rem;
+    height: auto;
+}
+
+.botoes-principais {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.bloco.duplo {
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    min-width: 8rem;
+    flex: 1;
+    max-width: 10rem;
+}
+
+.bloco.duplo p {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+/* alimentacao.html - atalhos de acesso rápido */
+.atalhos {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.bloco.pequeno {
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    width: 6rem;
+}
+
+.bloco.pequeno p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* alimentacao.html - seção do gráfico */
+.grafico {
+    margin-top: 2rem;
+}
+
+.grafico-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.grafico img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* adicionar_alimentacao.html - barra de busca centralizada */
+.busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem auto;
+}
+
+.busca input {
+    flex: none;
+    width: 70%;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.icone-busca {
+    background-color: transparent;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.item-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+
+/* adicionar_alimentacao.html - lista de histórico */
+.bloco-lista.historico ul {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.bloco-lista.historico {
+    max-width: 90%;
+    margin: 1rem auto;
+}
+
+.bloco-lista.historico li {
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+/* salmao.html - bloco com total por alimento */
+.bloco-resultado {
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    padding: 0.75rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    width: 85%;
+    text-align: center;
+}
+
+.bloco-resultado p {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.bloco-resultado.total {
+    margin-top: 2rem;
+}
+
+.bloco-resultado strong {
+    font-weight: normal;
+}
+
+/* exercicio.html, ciclismo.html */
+.bloco-lista ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.bloco-lista ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* ar_livre.html */
+.bloco-lista ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* ar_livre.html - grade responsiva de categorias */
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.categoria {
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: normal;     
+    font-size: 0.9rem;       
+    box-sizing: border-box;
+    white-space: normal;     
+    word-break: keep-all;     
+}
+
+.categoria img {
+    width: 40px;
+    height: auto;
+    display: block;
+    margin: 0.75rem auto 0;
+}
+
+
+/* meditacao.html - cards */
+.cards-meditacao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin: 1rem;
+}
+
+.cards-meditacao .bloco {
+    background-color: #e5e5e5;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+/* meditacao.html - bloco compartilhar centralizado */
+.cards-meditacao .bloco.compartilhar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco p {
+    font-weight: bold;
+}
+
+/* explorar.html */
+.bloco-info {
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    padding: 0.75rem;
+    border-radius: 4px;
+}
+
+.bloco-info-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.blocos-lista article,
+.blocos-lista .bloco-info-link {
+    margin-bottom: 1.5rem; 
+}
+
+.bloco-info h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* meditacao_rapida.html */
+.card {
+    background-color: #e5e5e5;
+    border: 1px solid black;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card.grande ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.card.grande img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
+/* amigos.html */
+.ranking {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.ranking li {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+}
+
+.botao-adicionar {
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #d6e4ff;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    width: fit-content;
+}
+
+/* adicionar_amigos.html */
+.barra-busca {
+    width: 90%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    margin: 1.5rem auto 1rem auto; /* adiciona espaçamento ao redor */
+    display: block;
+}
+
+.lista-amigos {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem; /* espaço entre lista e sugestoes */
+}
+
+.lista-amigos li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: var(--verde-claro);
+    font-weight: bold;
+}
+
+.lista-amigos img {
+    width: 40px;
+    height: 40px;
+}
+
+.sugestoes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* aumenta espaço entre sugestões */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sugestoes figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    gap: 0.5rem;
+}
+
+.sugestoes img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+/* meuperfil.html */
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.info-usuario {
+    text-align: center;
+}
+
+.info-usuario img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.perfil-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.botao-nav {
+    text-decoration: none;
+    color: black;
+    background-color: #c6e0ff;
+    border: 2px solid black;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+.historico {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem;
+}
+
+.historico article {
+    background-color: var(--verde-claro);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+}

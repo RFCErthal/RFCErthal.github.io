@@ -1,64 +1,66 @@
-<!DOCTYPE html>   
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Alimentação</title>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentação</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a class="voltar" href="index.html">&#x276E;</a>
+        <h1>Alimentação</h1>
+        <a class="icone-home" href="index.html">
+            <img src="img/casa.png" alt="Inicio">
+        </a>
+    </header>        
 
-    <body>
-        
-        <header>
-            <button type="button" onclick="window.location.href='index.html'">Home</button>
-            <h1>Alimentação</h1>
-        </header>
-
-        <main>
-            <h3>Hoje (kcal)</h3>
-            <p>976</p>
-            <h3>Média diaria (kcal)</h3>
-            <p>2380</p>
- 
-            <br>
-            
-            <a href="adicionar_alimentacao.html">
-                <h3>ADICIONAR</h3>
+    <main class="alimentacao">
+        <section class="botoes-principais">
+            <a class="bloco duplo" href="adicionar_alimentacao.html">
+                <h2>Adicionar</h2>
+                <p>Alimentos<br>Bebidas</p>
             </a>
-            <h3>REMOVER</h3>
+            <article class="bloco duplo">
+                <h2>Remover</h2>
+                <p>Alimentos<br>Bebidas</p>
+            </article>
+        </section>
+    
+        <section class="atalhos">
+            <article class="bloco pequeno">
+                <h3>Água Hoje</h3>
+                <img src="img/glass-of-water.png" alt="Água">
+                <p>Água Hoje</p>
+            </article>
+            <article class="bloco pequeno">
+                <h3>Novas Receitas</h3>
+                <img src="img/receita.png" alt="receitas">
+                <p>Novas Receitas</p>
+            </article>
+            <article class="bloco pequeno">
+                <h3>Tendências</h3>
+                <img src="img/trend.webp" alt="Gráfico">
+                <p>Tendências</p>
+            </article>
+        </section>
+    
+        <section class="grafico">
+            <header class="grafico-topo">
+                <h2>Histórico Calórico</h2>
+                <span>100 Dias</span>
+            </header>
+            <img src="img/calorias.jpg" alt="Histórico gráfico">
+        </section>
+    </main>    
 
-            <br>
-
-            <h3>Água</h3>
-            <p>+/- 200ml</p>
-            <h3>Copos hoje</h3>
-            <p> 60% </p>
-            <img src="img/glass-of-water.png" width="50" height="50" alt="Simbolo de mais">
-            
-
-            <br>
-            <br>
-            <br>
-            <br>
-
-        </main>
-
-        <footer>
-            <a href="alimentacao.html">
-                <img src="img/apple.png" width="100" height="100" alt="Alimentação">
-            </a>
-            <a href="exercicio.html">
-                <img src="img/anilha.png" width="100" height="100" alt="Exercícios">
-            </a>
-            <a href="meditacao.html">
-                <img src="img/lotus.png" width="100" height="100" alt="Meditação">
-            </a>
-            <a href="amigos.html">
-                <img src="img/friends.png" width="100" height="100" alt="Amigos">
-            </a>
-            <a href="mais.html">
-                <img src="img/more.png" width="100" height="100" alt="Outros">
-            </a>
-        </footer>
-
-    </body>
-
+    <footer>
+        <a href="alimentacao.html"><img src="img/apple.png" alt="Alimentação"></a>
+        <a href="exercicio.html"><img src="img/anilha.png" alt="Exercício"></a>
+        <a href="meditacao.html"><img src="img/lotus.png" alt="Meditação"></a>
+        <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
+        <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
+    </footer>
+</body>
 </html>
