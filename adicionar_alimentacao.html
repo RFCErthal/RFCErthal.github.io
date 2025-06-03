@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a class="voltar" href="alimentacao.html">&#x276E;</a>
+        <a class="voltar" href="javascript:history.back()">&#x276E;</a>
         <h1>Alimentação</h1>
         <a class="icone-home" href="index.html">
             <img src="img/casa.png" alt="Inicio">
@@ -21,7 +21,7 @@
 
         <section class="busca">
             <h3 class="titulo-busca">Buscar alimento</h3>
-            <input type="text" placeholder="Digite...">
+            <input type="number" placeholder="Digite...">
             <button class="icone-busca">
                 <img src="https://fakeimg.pl/24x24?text=🔍" alt="Buscar">
             </button>
@@ -34,11 +34,11 @@
                     <a href="peixes.html" class="item-link">Peixes</a>
                     <button class="add" onclick="location.href='peixes.html'">+</button>
                 </li>                                              
-                <li>Carnes <button class="add">+</button></li>
-                <li>Saladas <button class="add">+</button></li>
-                <li>Frangos <button class="add">+</button></li>
-                <li>Cereais <button class="add">+</button></li>
-                <li>Bebidas <button class="add">+</button></li>
+                <li>Carnes <button class="add" onclick="adicionarGenerico()">+</button></li>
+                <li>Saladas <button class="add" onclick="adicionarGenerico()">+</button></li>
+                <li>Frangos <button class="add" onclick="adicionarGenerico()">+</button></li>
+                <li>Cereais <button class="add" onclick="adicionarGenerico()">+</button></li>
+                <li>Bebidas <button class="add" onclick="adicionarGenerico()">+</button></li>
             </ul>
         </section>
 
@@ -62,5 +62,6 @@
         <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
         <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
     </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

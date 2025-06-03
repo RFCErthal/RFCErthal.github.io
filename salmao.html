@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a class="voltar" href="peixes.html">&#x276E;</a>
+        <a class="voltar" href="javascript:history.back()">&#x276E;</a>
         <h1>Alimentacao</h1>
         <a class="icone-home" href="index.html">
             <img src="img/casa.png" alt="Inicio">
@@ -21,8 +21,8 @@
 
         <label class="quantidade-label" for="quantidade">Quantidade:</label>
         <section class="busca">
-            <input type="text" id="quantidade" placeholder="Digite...">
-            <button class="icone-busca">
+            <input type="number" id="quantidade" placeholder="Digite...">
+            <button class="icone-busca" onclick="buscarQuantidade()">
                 <img src="https://fakeimg.pl/24x24?text=🔍" alt="Buscar">
             </button>
         </section>
@@ -36,17 +36,17 @@
         <section class="bloco-lista">
             <h3>Acompanhamentos</h3>
             <ul>
-                <li>Arroz <button class="add">+</button></li>
-                <li>Feijao <button class="add">+</button></li>
-                <li>Tomate <button class="add">+</button></li>
-                <li>Saladas <button class="add">+</button></li>
-                <li>Vegetais <button class="add">+</button></li>
-                <li>Outros <button class="add">+</button></li>
+                <li>Arroz <button class="add" onclick="adicionarAcompanhamento('Arroz')">+</button></li>
+                <li>Feijao <button class="add" onclick="adicionarAcompanhamento('Feijao')">+</button></li>
+                <li>Tomate <button class="add" onclick="adicionarAcompanhamento('Tomate')">+</button></li>
+                <li>Saladas <button class="add" onclick="adicionarAcompanhamento('Saladas')">+</button></li>
+                <li>Vegetais <button class="add" onclick="adicionarAcompanhamento('Vegetais')">+</button></li>
+                <li>Outros <button class="add" onclick="adicionarGenerico()">+</button></li>
             </ul>
             <section class="busca">
                 <h4>Buscar Acompanhamentos</h4>
-                <input type="text" placeholder="Buscar...">
-                <button class="icone-busca">
+                <input type="number" placeholder="Buscar...">
+                <button class="icone-busca" onclick="buscarQuantidade()">
                     <img src="https://fakeimg.pl/24x24?text=🔍" alt="Buscar">
                 </button>
             </section>
@@ -66,5 +66,7 @@
         <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
         <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
     </footer>
+<footer><p>&copy; 2025 Seu Nome</p></footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

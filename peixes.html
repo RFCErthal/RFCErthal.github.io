@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a class="voltar" href="adicionar_alimentacao.html">&#x276E;</a>
+        <a class="voltar" href="javascript:history.back()">&#x276E;</a>
         <h1>Alimentação</h1>
         <a class="icone-home" href="index.html">
             <img src="img/casa.png" alt="Inicio">
@@ -26,17 +26,17 @@
                     <a href="salmao.html" class="item-link">Salmão</a>
                     <button class="add" onclick="location.href='salmao.html'">+</button>
                 </li>                
-                <li>Tilápia <button class="add">+</button></li>
-                <li>Robalo <button class="add">+</button></li>
-                <li>Bacalhau <button class="add">+</button></li>
-                <li>Atum <button class="add">+</button></li>
-                <li>Sardinha <button class="add">+</button></li>
+                <li>Tilápia <button class="add" onclick="adicionarGenerico()">+</button></li>
+                <li>Robalo <button class="add" onclick="adicionarGenerico()">+</button></li>
+                <li>Bacalhau <button class="add" onclick="adicionarGenerico()">+</button></li>
+                <li>Atum <button class="add" onclick="adicionarGenerico()">+</button></li>
+                <li>Sardinha <button class="add" onclick="adicionarGenerico()">+</button></li>
             </ul>
         </section>
 
         <section class="busca">
             <h3>Buscar Peixe</h3>
-            <input type="text" placeholder="Outros...">
+            <input type="number" placeholder="Outros...">
             <button class="icone-busca">
                 <img src="https://fakeimg.pl/24x24?text=🔍" alt="Buscar">
             </button>
@@ -62,5 +62,6 @@
         <a href="amigos.html"><img src="img/friends.png" alt="Amigos"></a>
         <a href="mais.html"><img src="img/more.png" alt="Mais"></a>
     </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
